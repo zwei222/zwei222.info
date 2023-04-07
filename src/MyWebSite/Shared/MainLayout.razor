@@ -1,0 +1,31 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="header">
+        <PageHeader>
+            <a class="header-link" href="/">@ConstString.WebSiteName</a>
+            <ul class="header-menu">
+                <li>
+                    <a class="header-link" href="#profile">
+                        <i class="font-icon las la-id-card"></i>Profile
+                    </a>
+                </li>
+                <li>
+                    <a class="header-link" href="#link">
+                        <i class="font-icon las la-link"></i>Link
+                    </a>
+                </li>
+            </ul>
+        </PageHeader>
+    </div>
+
+    <main>
+        <article class="content">
+            @Body
+        </article>
+    </main>
+    
+    <div class="footer">
+        <PageFooter />
+    </div>
+</div>

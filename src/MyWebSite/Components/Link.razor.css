@@ -1,0 +1,37 @@
+﻿.content-section {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+    .content-section .section-header {
+        padding: 1rem 1rem 1rem 2.5rem;
+        position: relative;
+    }
+
+        .content-section .section-header:before {
+            position: absolute;
+            top: 20%;
+            left: 20px;
+            width: 6px;
+            height: 60%;
+            content: '';
+            background-color: var(--accent-color);
+        }
+
+    .content-section .link-contents {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+        .content-section .link-contents ul {
+            list-style: none;
+        }
+
+            .content-section .link-contents ul li {
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }

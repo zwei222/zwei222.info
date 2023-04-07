@@ -1,0 +1,13 @@
+﻿.footer {
+    height: 80px;
+    background-color: #f2f2f2;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-top: 1.5px solid var(--accent-color);
+}
+
+    .footer .copyright {
+        max-width: 800px;
+        margin: auto;
+    }

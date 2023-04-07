@@ -1,0 +1,29 @@
+﻿@inherits ComponentBase
+
+<section class="content-section">
+    <h1 class="section-header">Profile</h1>
+    
+    <div class="profile-contents">
+        <img id="profile-image" class="profile-image" src="/img/profile.png" />
+        
+        <div class="profile-list">
+            <span class="profile-name">@ConstString.Name</span>
+            <span class="profile-id">@($"@{ConstString.Id}")</span>
+            <ul>
+                <li>
+                    <i class="las la-tag"></i>
+                    <div class="profile-tag-list">
+                        @foreach (var tag in this.Tags)
+                        {
+                            <span class="profile-tag">@tag</span>
+                        }
+                    </div>
+                </li>
+                <li>
+                    <i class="las la-envelope"></i>
+                    <a href=@($"mailto:{ConstString.MailAddress}")>@ConstString.MailAddress</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
